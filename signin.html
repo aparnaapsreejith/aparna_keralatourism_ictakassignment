@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> <title>Document</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script></head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">KERALA TOURISM</a>
+          <img src="images/logo.png" alt="" width="30" height="24">
+          <div class="tm-col-right">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-login" href="#">Login</a>
+              </li>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">District</a></li>
+                  <li><a class="dropdown-item" href="#">Most visited</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Activities</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">s
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </nav>   
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/kerala.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/kochi.jpg" class="d-block w-100" alt="...">
+          </div>
+         
+          <div class="carousel-item">
+            <img src="images/ayurveda.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/peace.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/contest.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="tm-row">
+        <div class="tm-col-left"></div>
+        <main class="tm-col-right tm-contact-main"> <!-- Content -->
+            <section class="tm-content tm-contact">
+                <h2 class="mb-4 tm-content-title">Welcome...!</h2>
+                <p class="mb-85">Please enter the details to signup.</p>
+                <form id="contact-form" action="districts.html" onsubmit="return svalidate()">
+                    <div class="form-group mb-4">
+                        <input type="text" name="name" class="form-control" placeholder="Please enter a userame"/>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" id="semail" class="form-control" placeholder="Your email id"/>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" id="phone" class="form-control" placeholder="Your phone number"/>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="password" id="password1" class="form-control" placeholder="Enter a password"/>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="password" id="password2" class="form-control" placeholder="Re-enter password"/>
+                    </div>
+
+                    <br>
+                    <p class="">Password Strength :</p>
+                    <div id="typepass">
+                        <div id="strengthResult">
+                        </div>
+                      </div>
+                      <br>
+                    
+                    <div class="text-left">
+                        <button type="submit" class="btn btn-big btn-primary">Signup</button>
+                    </div>
+                    <br>
+                    <div class="text-left">
+                        <a href="login.html" class="mb-85">I have an account..</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</div>        
+
+<div class="tm-row">
+    <div class="tm-col-left text-center">            
+        <ul class="tm-bg-controls-wrapper">
+            <li class="tm-bg-control active" data-id="0"></li>
+            <li class="tm-bg-control" data-id="1"></li>
+            <li class="tm-bg-control" data-id="2"></li>
+        </ul>            
+    </div>
